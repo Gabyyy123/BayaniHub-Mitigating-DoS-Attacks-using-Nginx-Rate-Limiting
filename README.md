@@ -13,8 +13,11 @@ Installing the Server (Zorin OS)
 First, I installed Nginx on my laptop:
 
 *sudo apt install nginx -y || installing the nginx package
+
 *sudo systemctl start nginx || start the nginx
+
 *sudo systemctl stop nginx || stop the nginx
+
 *sudo systemctl status nginx || to check if it is active running
 
 Installing the Attack Tool (Kali Linux)
