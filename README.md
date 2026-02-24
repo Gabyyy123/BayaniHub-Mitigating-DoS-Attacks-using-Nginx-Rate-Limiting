@@ -124,8 +124,10 @@ Checking if the nginx is still activate
 The webserver is already stop running due to the nginx is not activated
 <img width="1356" height="695" alt="Screenshot from 2026-02-24 16-50-14" src="https://github.com/user-attachments/assets/0e56451b-bdfa-401a-8bef-44ffd608a12a" />
 
-Conclusion
+# Conclusion
+
 This project shows how I used a "shield" called Nginx Rate Limiting to protect my website, BayaniHub.  Even though the website showed a 503 error, this was actually a good thing! It proves the server was smart enough to block the bad traffic from my Kali Linux attack tool (GoldenEye) instead of crashing. By doing this, my Zorin OS laptop stayed safe, and its brain (CPU and RAM) did not get overwhelmed or frozen.
+
 
 I did this project only for school and practice in my own private lab. Please do not use these tools or methods on real websites like Google, Facebook, or any other platform. Attacking websites you don't own is illegal and can get you into big trouble. Always be an ethical student and only practice on your own computers!
 
