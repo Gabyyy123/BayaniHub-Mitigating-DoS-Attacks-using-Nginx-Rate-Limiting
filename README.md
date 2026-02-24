@@ -7,9 +7,11 @@ Attacker: A Kali Linux VM.
 Attack Tool: GoldenEye (a tool used to flood websites).
 The Website: My project called BayaniHub.
 
-How I Set It Up & Command
+
+#How I Set It Up & Command
 
 Installing the Server (Zorin OS)
+
 First, I installed Nginx on my laptop:
 
 *sudo apt install nginx -y || installing the nginx package
@@ -20,17 +22,21 @@ First, I installed Nginx on my laptop:
 
 *sudo systemctl status nginx || to check if it is active running
 
-Installing the Attack Tool (Kali Linux)
+
+#Installing the Attack Tool (Kali Linux)
 
 Then, I put the attack tool on my Kali machine:
 
+
 *sudo apt install goldeneye -y || instaling the goldeneye on my KaliVM
 
-Deploy BayaniHub Website
+
+#Deploy BayaniHub Website
 
 To make the website live, I had to move my project files to the Nginx root directory.
 
 Nginx looks for files in /var/www/html/ by default.
+
 
 *sudo cp -r /path/your/website/folder/. /var/www/html/
 
@@ -44,15 +50,18 @@ sudo nano /etc/nginx/sites-available/default
 You added this line inside the location / block:
 limit_req zone=mylimit;
 
-Executing the Attack (Kali Linux)
+
+#Executing the Attack (Kali Linux)
 
 You launched the attack against your Zorin IP address.
 
 *goldeneye http://192.168.1.38 -w 50
 
-Checking the Logs (Zorin OS)
+
+#Checking the Logs (Zorin OS)
 
 While the attack was running, you checked the logs to see the defense in action.
+
 
 *tail -f /var/log/nginx/error.log
 
