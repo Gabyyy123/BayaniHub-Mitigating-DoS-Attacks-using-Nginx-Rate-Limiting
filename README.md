@@ -1,4 +1,4 @@
-# BayaniHub-Mitigating-DoS-Attacks-using-Nginx-Rate-Limiting
+# BayaniHub: Mitigating DoS-Attacks using Nginx-Rate-Limiting
 
 Tools I Used
 Target: My laptop running Zorin OS.
