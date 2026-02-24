@@ -29,6 +29,7 @@ Then, I put the attack tool on my Kali machine:
 Deploy BayaniHub Website
 
 To make the website live, I had to move my project files to the Nginx root directory.
+
 Nginx looks for files in /var/www/html/ by default.
 
 *sudo cp -r /path/your/website/folder/. /var/www/html/
@@ -44,11 +45,13 @@ You added this line inside the location / block:
 limit_req zone=mylimit;
 
 Executing the Attack (Kali Linux)
+
 You launched the attack against your Zorin IP address.
 
 *goldeneye http://192.168.1.38 -w 50
 
 Checking the Logs (Zorin OS)
+
 While the attack was running, you checked the logs to see the defense in action.
 
 *tail -f /var/log/nginx/error.log
